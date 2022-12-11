@@ -1,0 +1,33 @@
+.form {
+  width: 100%;
+  & > * {
+    display: block;
+  }
+  &-input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid var(--color-primary-light-3);
+    border-radius: 0.5rem;
+    &:focus {
+      outline: none;
+      border: 2px solid var(--color-primary);
+    }
+  }
+  &-label {
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+  }
+  &-Validation {
+    height: 1rem;
+    color: orangered;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+}

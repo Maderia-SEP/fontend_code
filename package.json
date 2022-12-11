@@ -1,0 +1,14 @@
+{
+  "name": "madria",
+  "version": "1.0.0",
+  "description": "hotel app",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "natty",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
