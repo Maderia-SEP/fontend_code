@@ -13,6 +13,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
     <script defer type="module" src="../script/appMain.js"></script>
     <title>Maderia</title>
   </head>
@@ -25,10 +36,10 @@
             <a class="nav-link" href="#">
               <i class="fa-light fa-globe nav-icon"></i> English</a
             >
-            <a class="nav-link" href="#"> Hotels</a>
-            <a class="nav-link btn btn-less logout" href="../index.html"
-              >Logout</a
+            <a class="nav-link btn btn-less" href="./findNearbyHotels.html"
+              >Get nearBy Hotels</a
             >
+            <a class="nav-link logout" href="../index.html">Logout</a>
             <a class="nav-link profile-icon">
               <img
                 class="nav-link-img"
@@ -48,5 +59,6 @@
         </div>
       </div>
     </header>
+    <main></main>
   </body>
 </html>

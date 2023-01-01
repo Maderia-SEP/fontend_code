@@ -97,6 +97,8 @@ class AppRegister extends App {
       this.hotelAccounts.push(newHotel);
     }
     this.showPopup();
+    this.setLocalStorage("userAccounts",this.userAccounts)
+    this.setLocalStorage("hotelAccounts",this.userAccounts)
     inputEmail.value = inputUsername.value = inputPassword.value = "";
   }
   toggleUser() {

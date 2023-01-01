@@ -39,11 +39,10 @@ class AppSignIn extends App {
     e.preventDefault();
     const email = signinEmail.value;
     const password = singinPassword.value;
-    console.log(this.userAccounts);
     emailValidation.textContent = passwordValidation.textContent = "";
     const user = this.userAccounts.find((acc) => acc.email === email);
     const hotel = this.hotelAccounts.find((acc) => acc.email === email);
-
+    console.log(user);
     if (email === "") {
       emailValidation.textContent = "this field is required";
       return;
@@ -84,6 +83,8 @@ class AppSignIn extends App {
     if (this.togglePoint === "hotel") {
       hotel.onlineStatus = "on";
     }
+    this.setLocalStorage("userAccounts", this.userAccounts);
+    this.setLocalStorage("hotelAccounts", this.hotelAccounts);
     location = "../pages/app.html";
   }
 }

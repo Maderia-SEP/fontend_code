@@ -29,15 +29,11 @@ class App {
   currentUser;
   togglePoint = "user";
   constructor() {
+    this.getLocalStorage("userAccounts");
+    this.getLocalStorage("hotelAccounts");
   }
 
   getLocalStorage(name) {
-    // if (name === "userAccounts" && this.userAccounts.length === 0) {
-    //   return;
-    // }
-    // if (name === "hotelAccounts" && this.hotelAccounts.length === 0) {
-    //   return;
-    // }
     const data = JSON.parse(localStorage.getItem(name));
     if (name === "userAccounts" && data) {
       this.userAccounts = data;
@@ -47,6 +43,9 @@ class App {
     }
   }
 
+  setLocalStorage(name, data) {
+    localStorage.setItem(name, JSON.stringify(data));
+  }
 }
 // new App().clearLocalStorage();
 export { App, UserAccount, HotelAccount };

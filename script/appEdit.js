@@ -143,6 +143,8 @@ class AppEdit extends App {
     this.currentUser.email = email;
     this.showProfile();
     document.body.classList.add("showPopup");
+    this.setLocalStorage("userAccounts", this.userAccounts);
+    this.setLocalStorage("hotelAccounts", this.userAccounts);
   }
   editPassword(e) {
     e.preventDefault();
@@ -169,8 +171,9 @@ class AppEdit extends App {
         " password show be 8 or more characters";
       return;
     }
-
     this.currentUser.password = newPassword;
+    this.setLocalStorage("userAccounts", this.userAccounts);
+    this.setLocalStorage("hotelAccounts", this.userAccounts);
     document.body.classList.add("showPopup");
   }
   showPopup() {
