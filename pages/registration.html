@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../leaflet/leaflet.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../leaflet/leaflet.js"></script>
     <script defer type="module" src="../script/appRegister.js"></script>
     <title>Maderia</title>
   </head>
@@ -40,33 +42,73 @@
           </span>
         </div>
         <form action="" class="form">
-          <label for="full-name" class="form-label form-user-label"
-            >Full name</label
-          >
-          <input
-            class="form-input form-input--user-name"
-            id="full-name"
-            required
-            type="text"
-          />
-          <p class="form-Validation form-Validation-name">&nbsp;</p>
-          <label for="email" class="form-label">Email</label>
-          <input
-            class="form-input form-input--email"
-            id="email"
-            type="email"
-            required
-          />
-          <p class="form-Validation form-Validation-email">&nbsp;</p>
-          <label for="password" class="form-label">Password</label>
-          <input
-            class="form-input form-input--password"
-            id="password"
-            type="password"
-            required
-          />
-          <p class="form-Validation form-Validation-password">&nbsp;</p>
-          <button class="btn btn-blue btn-register">Register</button>
+          <div class="common">
+            <label for="full-name" class="form-label form-user-label"
+              >Full name</label
+            >
+            <input
+              class="form-input form-input--user-name"
+              id="full-name"
+              required
+              type="text"
+            />
+            <p class="form-Validation form-Validation-name">&nbsp;</p>
+
+            <label for="name" class="form-label form-user-label"
+              >Full name</label
+            >
+            <input
+              class="form-input form-input--user-name"
+              id="name"
+              required
+              type="text"
+            />
+            <p class="form-Validation form-Validation-name">&nbsp;</p>
+
+            <label for="email" class="form-label">Email</label>
+            <input
+              class="form-input form-input--email"
+              id="email"
+              type="email"
+              required
+            />
+            <p class="form-Validation form-Validation-email">&nbsp;</p>
+            <label for="password" class="form-label">Password</label>
+            <input
+              class="form-input form-input--password"
+              id="password"
+              type="password"
+              required
+            />
+            <p class="form-Validation form-Validation-password">&nbsp;</p>
+
+            <button class="btn btn-blue btn-register">Register</button>
+          </div>
+          <div class="location hidden">
+            <label class="form-label"> location</label> <br />
+            <span class="btn-coord btn-coord-gps">Get location from GPS</span>
+            <span class="btn-coord btn-coord-map">Get location from map</span>
+            <p class="map-instruction hidden">
+              Click on the hotel location on the map
+            </p>
+            <input
+              id="lat"
+              name="lat"
+              class="location-input location-input-lat"
+              type="text"
+              value=""
+              required
+            />
+            <input
+              id="long"
+              name="long"
+              class="location-input location-input-long"
+              type="text"
+              value=""
+              required
+            />
+            <div id="map" class="map"></div>
+          </div>
         </form>
       </section>
     </main>
