@@ -1,0 +1,50 @@
+.cards {
+  padding: 2rem 3rem;
+  column-gap: 3rem;
+  row-gap: 5rem;
+  .card {
+    border-top: 2px solid var(--color-primary);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    padding: 1rem;
+
+    & p {
+      font-size: 1.6rem;
+    }
+
+    &-head-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & h2 {
+        margin: 0;
+        padding: 5px 0 0 1rem;
+        text-transform: uppercase;
+      }
+      margin-bottom: 2.4rem;
+      & button {
+        background-color: orangered;
+      }
+    }
+
+    & table {
+      border-collapse: collapse;
+      font-size: 1.6rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      td {
+        padding: 5px 8px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+  }
+}
