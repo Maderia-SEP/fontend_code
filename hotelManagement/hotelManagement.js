@@ -14,7 +14,7 @@ class HotelManagement {
       cardHtml += `
       <div class="card" data-id="${card.id}">
               <div class="card-head-box">
-                <h2 class="heading-secondary">${card.roomTypeName}</h2>
+                <h2 class="heading-secondary">${card.name}</h2>
                 <button class="btn btn-blue btn-delete">Delete</button>
               </div>
               <table>
@@ -39,9 +39,14 @@ class HotelManagement {
                   <td>${card.occupiedNumber}</td>
                 </tr>
               </table>
+              <div class="decription">
+              <h2>Description</h2>
+              <p>
+                ${card.description}
+              </p>
               <div class="buttons">
                 <button class="btn btn-blue btn-add-room">Add Room</button>
-                <button class="btn btn-blue" btn-remove-room>remove Room</button>
+                <button class="btn btn-blue" btn-remove-room>Remove Room</button>
               </div>
             </div>
       `;

@@ -1,0 +1,75 @@
+.hmap {
+  width: 85%;
+  margin: 5rem auto;
+  border: 1px solid var(--color-gray-light-3);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  height: 60rem;
+
+  &-list {
+    background-color: var(--color-primary);
+    border-right: 1px solid var(--color-gray-light-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  &-location {
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 3px solid var(--color-secondary-light-1);
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--color-primary-light-1);
+    color: var(--color-white);
+    font-size: 1.4rem;
+  }
+
+  &-area {
+  }
+  &-list__ul {
+    width: 100%;
+    list-style: none;
+    overflow: auto;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &-item {
+    background-color: var(--color-primary-light-1);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray-light-1);
+    border-radius: 5px;
+    transition: all 0.2s;
+    &__desc {
+      flex-basis: 15rem;
+    }
+    &__name {
+      font-size: 1.6rem;
+    }
+    &__address {
+      font-size: 1.2rem;
+    }
+    &-rate {
+      font-size: 1.2rem;
+    }
+    &:hover,
+    &-active {
+      background: var(--color-primary-light-3);
+    }
+    &__reserve {
+      background-color: var(--color-secondary-light-1);
+      color: var(--color-white);
+      transition: all 0.2s;
+      font-size: 1.4rem;
+    }
+  }
+}
+.hidden {
+  display: none;
+}

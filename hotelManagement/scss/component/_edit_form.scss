@@ -1,0 +1,26 @@
+.edit-profile {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  //   background-color: aquamarine;
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  &-img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    margin-right: 1rem;
+  }
+  .profile-username {
+    font-size: 3rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

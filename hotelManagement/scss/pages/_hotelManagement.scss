@@ -1,0 +1,22 @@
+.hotelManagement {
+  padding: 0 10rem;
+
+  .form-label {
+    margin-bottom: 3px;
+  }
+  .form-input,
+  .form-textarea {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-box {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+  }
+  .btn-blue {
+    font-size: 1.4rem;
+    padding: 5px 8px;
+  }
+}

@@ -169,6 +169,11 @@ body {
     padding: 0 !important;
     display: block;
     margin-bottom: 3rem; }
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6; }
+    .btn:disabled:hover, .btn:disabled:active {
+      transform: none; }
 
 .hero__text {
   margin-top: 8.4rem;
@@ -488,7 +493,8 @@ body {
       margin-bottom: 2.4rem; }
       .cards .card-head-box h2 {
         margin: 0;
-        padding: 5px 0 0 1rem; }
+        padding: 5px 0 0 1rem;
+        text-transform: uppercase; }
       .cards .card-head-box button {
         background-color: orangered; }
     .cards .card table {
@@ -500,10 +506,36 @@ body {
         background-color: #eee; }
       .cards .card table td {
         padding: 5px 8px; }
+    .cards .card .decription {
+      text-align: center;
+      margin-bottom: 2.4rem; }
+      .cards .card .decription h2 {
+        text-transform: uppercase;
+        margin-bottom: 1rem; }
+      .cards .card .decription p {
+        font-size: 1.3rem; }
     .cards .card .buttons {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.4rem;
       justify-content: center; }
+  .cards .card-review {
+    padding: 2rem 3rem;
+    border: 1px solid #efefefef;
+    border-radius: 10px; }
+    .cards .card-review:not(:last-child) {
+      margin-bottom: 3rem; }
+    .cards .card-review .rating-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem; }
+      .cards .card-review .rating-box .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    .cards .card-review blockquote {
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
 
 .header-r {
   background-color: #1864ab;

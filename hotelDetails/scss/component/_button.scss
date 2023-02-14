@@ -60,4 +60,14 @@
     display: block;
     margin-bottom: 3rem;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+
+    &:hover,
+    &:active {
+      transform: none;
+    }
+  }
 }
